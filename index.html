@@ -141,7 +141,7 @@
         url: "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/900A_and_top_100_en/MapServer/2",
         title: "Oil and Gas",
         displayField: "minesite_en",
-        fields: ["Shape", "province_en", "minesite_en", "product_en", "type_en", "latitude", "longitude", "OBJECTID"],
+        fields: ["province_en", "minesite_en", "product_en", "type_en", "latitude", "longitude", "OBJECTID"],
       },
       {
           url: "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/900A_and_top_100_en/MapServer/3",
@@ -152,25 +152,25 @@
           url: "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/900A_and_top_100_en/MapServer/4",
           title: "Metal mines",
           displayField: "operation_name_en",
-          fields: ["Shape", "operation_group_en", "province_en", "operation_name_en", "operator_owners_en", "facilities_code_en_spelt", "commodity_group_en_spelt", "commodity_en_spelt", "OBJECTID"],
+          fields: ["operation_group_en", "province_en", "operation_name_en", "operator_owners_en", "facilities_code_en_spelt", "commodity_group_en_spelt", "commodity_en_spelt", "OBJECTID"],
         },
         {
           url: "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/900A_and_top_100_en/MapServer/5",
           title: "Nonmetal mines",
           displayField: "operation_name_en",
-          fields: ["Shape", "operation_group_en", "province_en", "operation_name_en", "operator_owners_en", "facilities_code_en_spelt", "commodity_group_en_spelt", "commodity_en_spelt", "OBJECTID"],
+          fields: ["operation_group_en", "province_en", "operation_name_en", "operator_owners_en", "facilities_code_en_spelt", "commodity_group_en_spelt", "commodity_en_spelt", "OBJECTID"],
         },
         {
           url: "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/900A_and_top_100_en/MapServer/6",
           title: "Coal mines",
           displayField: "operation_name_en",
-          fields: ["Shape", "operation_group_en", "province_en", "operation_name_en", "operator_owners_en", "facilities_code_en_spelt", "commodity_group_en_spelt", "commodity_en_spelt", "OBJECTID"],
+          fields: ["operation_group_en", "province_en", "operation_name_en", "operator_owners_en", "facilities_code_en_spelt", "commodity_group_en_spelt", "commodity_en_spelt", "OBJECTID"],
         },
         {
           url: "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/900A_and_top_100_en/MapServer/7",
           title: "Oil sands mines",
           displayField: "operation_name_en",
-          fields: ["Shape", "operation_group_en", "province_en", "operation_name_en", "operator_owners_en", "facilities_code_en_spelt", "commodity_group_en_spelt", "commodity_en_spelt", "OBJECTID"],
+          fields: ["operation_group_en", "province_en", "operation_name_en", "operator_owners_en", "facilities_code_en_spelt", "commodity_group_en_spelt", "commodity_en_spelt", "OBJECTID"],
         },
         {
           url: "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/900A_and_top_100_en/MapServer/8",
@@ -181,25 +181,25 @@
           url: "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/900A_and_top_100_en/MapServer/9",
           title: "Smelters and refineries",
           displayField: "operation_en",
-          fields: ["Shape", "operation_type_en", "province_en", "operation_en", "operator_owners_en", "facilities_code_en_spelt", "commodity_group_en_spelt", "commodity_en_spelt", "OBJECTID"],
+          fields: ["operation_type_en", "province_en", "operation_en", "operator_owners_en", "facilities_code_en_spelt", "commodity_group_en_spelt", "commodity_en_spelt", "OBJECTID"],
         },
         {
           url: "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/900A_and_top_100_en/MapServer/10",
           title: "Steel mills",
           displayField: "operation_en",
-          fields: ["Shape", "operation_type_en", "province_en", "operation_en", "operator_owners_en", "facilities_code_en_spelt", "commodity_group_en_spelt", "commodity_en_spelt", "OBJECTID"],
+          fields: ["operation_type_en", "province_en", "operation_en", "operator_owners_en", "facilities_code_en_spelt", "commodity_group_en_spelt", "commodity_en_spelt", "OBJECTID"],
         },
         {
           url: "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/900A_and_top_100_en/MapServer/11",
           title: "Ferroalloy plants",
           displayField: "operation_en",
-          fields: ["Shape", "operation_type_en", "province_en", "operation_en", "operator_owners_en", "facilities_code_en_spelt", "commodity_group_en_spelt", "commodity_en_spelt", "OBJECTID"],
+          fields: ["operation_type_en", "province_en", "operation_en", "operator_owners_en", "facilities_code_en_spelt", "commodity_group_en_spelt", "commodity_en_spelt", "OBJECTID"],
         },
         {
           url: "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/900A_and_top_100_en/MapServer/12",
           title: "Automobile shredders",
           displayField: "operation_en",
-          fields: ["Shape", "operation_type_en", "province_en", "operation_en", "operator_owners_en", "facilities_code_en_spelt", "commodity_group_en_spelt", "commodity_en_spelt", "OBJECTID"],
+          fields: ["operation_type_en", "province_en", "operation_en", "operator_owners_en", "facilities_code_en_spelt", "commodity_group_en_spelt", "commodity_en_spelt", "OBJECTID"],
         }
       ];
 
@@ -219,7 +219,7 @@
 
       var showHideLayersButton = document.getElementById("showHideLayers");
       var layerListContainer = document.getElementById("layerListContainer");
-// Toggle the Layer List visibility when clicking the "Show Layer List" button
+      // Toggle the Layer List visibility when clicking the "Show Layer List" button
       showHideLayersButton.addEventListener("click", function () {
         if (layerListContainer.style.display === "none") {
           layerListContainer.style.display = "block";
@@ -227,7 +227,6 @@
           layerListContainer.style.display = "none";
         }
       });
-
 
       // Initialize Layer List widget
       var layerList = new LayerList({
@@ -309,10 +308,13 @@
           content += "<tbody>";
 
           fields.forEach(function (field) {
-            content += "<tr>";
-            content += "<td><strong>" + field.alias + ":</strong></td>";
-            content += "<td>" + feature.attributes[field.name] + "</td>";
-            content += "</tr>";
+            if (field.name !== "Shape") {
+              // Exclude the "Shape" field
+              content += "<tr>";
+              content += "<td><strong>" + field.alias + ":</strong></td>";
+              content += "<td>" + feature.attributes[field.name] + "</td>";
+              content += "</tr>";
+            }
           });
 
           content += "</tbody></table>";
@@ -333,14 +335,20 @@
         var contentBody = "";
 
         fields.forEach(function (field) {
-          contentHeader += "<th>" + field.alias + "</th>";
+          if (field.name !== "Shape") {
+            // Exclude the "Shape" field
+            contentHeader += "<th>" + field.alias + "</th>";
+          }
         });
 
         attributesList.forEach(function (attributes) {
           contentBody += "<tr>";
 
           fields.forEach(function (field) {
-            contentBody += "<td>" + attributes[field.name] + "</td>";
+            if (field.name !== "Shape") {
+              // Exclude the "Shape" field
+              contentBody += "<td>" + attributes[field.name] + "</td>";
+            }
           });
 
           contentBody += "</tr>";
